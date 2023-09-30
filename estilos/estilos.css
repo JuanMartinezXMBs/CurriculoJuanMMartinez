@@ -212,12 +212,17 @@ article li{
     background-color: rgb(255, 255, 97);
 }
 
-/* ---------------------------------paragrafos-------------------- */
+/* ---------------------------------link e paragrafos-------------------- */
 p {
     font-size: 14px;
     font-weight: bold;
     color: rgb(255, 221, 158);
     font-family: Verdana;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* ----------are do article contato------------ */
