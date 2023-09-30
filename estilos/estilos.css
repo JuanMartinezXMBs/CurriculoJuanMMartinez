@@ -1,0 +1,386 @@
+* {box-sizing: border-box;}
+
+body, .fundo, .container, .listra1, .listra2, .listra3, .listra4, header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html { font-size: 16px;}
+
+/* ----------------------------inicio header----------------------------------------------- */
+
+header {
+    line-height: 0.6rem;
+    z-index: 1;
+}
+
+h1 {
+    color: rgb(255, 221, 158);
+    margin-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.pjuntoh1 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pjuntoh1 h2 {
+    text-align: center;
+    border-bottom: solid 1px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------------------------------------começo body, fundo e container------------------------------------------------- */
+
+h2 {
+    text-align: center;
+    border-bottom: solid 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    text-align: start;
+    margin: 5px;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    background-color: #4c4c28;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.fundo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #4c4c28;
+}
+
+.container {
+    box-shadow: 0 0 10px 3px black;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    background-color: #4c4c28d8;
+
+    align-items: center;
+
+    text-align: center;
+    flex-direction: column;
+
+
+    z-index: 1;
+    padding-bottom: 1rem;
+}
+
+/* --------------------estilização listras fundo---------------------------------------------------- */
+
+.listra1 {
+    background: linear-gradient(225deg, rgba(140,83,13,1) 30%, rgb(206, 138, 55) 60%, rgba(206,138,55,1) 60%);
+    width: 80%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.listra2 {
+    background: #4c4c28;
+    width: 80%;
+    height: 100%;
+    clip-path: polygon(70% 0, 80% 0, 100% 16%, 100% 25%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.listra3 {
+    background: #4c4c28;
+    width: 80%;
+    height: 100%;
+    clip-path: polygon(45% 0, 55% 0, 100% 40%, 100% 50%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.listra4 {
+    background: #4c4c28;
+    width: 80%;
+    height: 100%;
+    clip-path: polygon(15% 0, 25% 0, 100% 70%, 100% 80%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ----------------------------tamanho do figure e img-------------------------------------- */
+
+.tamanhofotorosto {
+   width: 160px;
+   box-shadow: 0 0 1px 3px black;
+}
+
+/* ----------------------estilização article------------------------------------------------- */
+.fundoarticle {
+    background-color: rgba(141, 75, 0, 0.747);
+    margin: auto;
+    width: auto;
+}
+
+.margin0 {margin: 0;}
+
+.margin1 {margin-top: 16px;}
+
+/* ----------------------articles perfil e contato e animação/hover modo mobile (clicando nos skills)------------- */
+
+.perfilcontato {
+    display: flex;
+    margin: 1rem;
+}
+
+.perfilcontato article {
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.infoperfil {
+    max-width: 150px;
+}
+
+.articlefolder:hover {
+    animation: subindo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: #3e8e41;
+}
+
+.INTHOB {
+    width: 400px;
+}
+
+article {
+    padding: 2px;
+}
+
+article li{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 221, 158);
+    font-family: Verdana;
+    text-align: start;
+    padding: 2px;
+}
+
+@keyframes subindo {
+  0% {transform: translateY(0);}
+  60% {transform: translateY(-120px);}
+  100% {transform: translateY(-100px);}
+}
+
+.flex-grande {
+    margin-top: 0;
+    margin: 15px;
+    padding: 5px;
+}
+
+.flex-grande article{
+    margin-bottom: 5px;
+}
+
+.flex-grande li .porcent {
+    width: 90%;
+    height: 6px;
+    background-color: black;
+    display: block;
+}
+
+.flex-grande li .porcent div {
+    width: 90%;
+    height: 6px;
+    background-color: rgb(255, 255, 97);
+}
+
+/* ---------------------------------paragrafos-------------------- */
+p {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 221, 158);
+    font-family: Verdana;
+}
+
+/* ----------are do article contato------------ */
+
+.infocontato {
+    grid-column: auto;
+    text-align: start;
+    padding-left: 5px;
+}
+
+.infocontato ul {
+    position: relative;
+    padding: 0;
+}
+
+.infocontato ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.infocontato ul li .icon {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+} 
+
+.infocontato ul li .text {
+    margin-bottom: 15px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* -----------------are do article interesses--------------------------*/
+.interesses {
+    grid-column: auto;
+    text-align: start;
+    padding-left: 5px;
+}
+
+.interesses ul {
+    position: relative;
+    padding: 0;
+}
+
+.interesses ul li {
+    padding-inline: 05px;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.interesses ul li .icon {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+} 
+
+.interesses ul li .text {
+    margin-bottom: 15px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ------------Desing responsivo---------------- */
+
+
+@media screen and (min-width: 600px ){
+    .container {
+        width: 70%;
+        height: 100%;
+        background-color: #4c4c2881;
+    }
+
+    header {
+        background-color: transparent;
+    }
+}
+
+@media screen and (min-width: 600px ){
+    .listras {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 800px ){
+
+    .INTHOB {
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+    }
+
+    .flex-grande {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        min-width: 800px;
+        margin: 50px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding: 0;
+    }
+
+    .flex-grande article {
+        margin-bottom: 5px;
+        width: 380px;
+        height: 250px;
+    }
+        
+
+    .interesses {
+        text-align: start;
+        padding-left: 5px;
+    }
+    
+    .interesses ul {
+        display: inline-flex;
+        padding: 0;
+    }
+
+    .infoperfil {
+        max-width: 200px;
+        max-height: 220px;
+        margin-bottom: 15px;
+    }
+
+    .infocontato {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .tamanhofotorosto {width: 150px;}
+    
+    .container {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 900px;
+        height: 90%;
+        box-shadow: 0 25px 55 px rgba(0,0,0,1);
+        margin-right: 18px;
+    }
+    
+    #art1 #art2 #art3 #art4 #art5 #art6 {width: 50%;}
+
+    header {
+        background-color: transparent;
+    }
+
+    @keyframes subindo {
+        0% {}
+        0% {}
+    }
+
+    .articlefolder:hover {
+        background-color: rgba(141, 75, 0, 0.747);
+    }
+}
