@@ -33,8 +33,8 @@ h1 {
     text-align: center;
     border-bottom: solid 1px;
     padding-bottom: 5px;
-    margin-right: 20px;
     margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -299,6 +299,7 @@ a {
 
 
 @media screen and (min-width: 600px ){
+
     .container {
         width: 650px;
         height: 100%;
@@ -318,6 +319,11 @@ a {
 }
 
 @media screen and (min-width: 800px ){
+
+    .pjuntoh1 h2 {
+        margin-right: -50px;
+        margin-left: 1px;;
+    }
 
     .z{
         display: none;
@@ -362,15 +368,20 @@ a {
         max-width: 200px;
         max-height: 220px;
         margin-bottom: 15px;
+        margin-left: 50px;
     }
 
     .infocontato {
         max-width: 250px;
         max-height: 250px;
+        margin-left: 50px;
     }
 
-    .tamanhofotorosto {width: 150px;}
-    
+    .tamanhofotorosto {
+        width: 150px;
+        margin-left: 50px;
+    }
+
     .container {
         align-items: flex-start;
         flex-direction: row;
