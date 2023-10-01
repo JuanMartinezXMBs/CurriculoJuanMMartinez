@@ -150,6 +150,7 @@ body {
 /* ----------------------articles perfil e contato e animação/hover modo mobile (clicando nos skills)------------- */
 
 .perfilcontato {
+    text-align: center;
     display: flex;
     margin: 1rem;
 }
