@@ -368,6 +368,9 @@ a {
         max-height: 250px;
     }
 
+    .infocontato ul li .text {
+        margin-bottom: 15px;
+    }
     .tamanhofotorosto {width: 150px;}
     
     .container {
