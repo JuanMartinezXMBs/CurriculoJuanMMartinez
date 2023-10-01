@@ -294,6 +294,10 @@ a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.email {
+    font-size: 8px;
+}
+
 /* ------------Desing responsivo---------------- */
 
 
@@ -371,6 +375,7 @@ a {
     .infocontato ul li .text {
         margin-bottom: 15px;
     }
+
     .tamanhofotorosto {width: 150px;}
     
     .container {
