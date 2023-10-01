@@ -296,16 +296,10 @@ a {
 
 /* ------------Desing responsivo---------------- */
 
-@media screen and (min-width: 480px ){
-
-    .container {
-    box-shadow: 0 0 10px 3px black;
-}
-}
-
 @media screen and (min-width: 600px ){
 
     .container {
+        box-shadow: 0 0 10px 3px black;
         width: 650px;
         height: 100%;
         background-color: #4c4c2881;
