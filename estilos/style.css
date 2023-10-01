@@ -296,7 +296,7 @@ a {
 
 /* ------------Desing responsivo---------------- */
 
-@media screen and (min-width: 400px ){
+@media screen and (min-width: 480px ){
 
     .container {
     box-shadow: 0 0 10px 3px black;
