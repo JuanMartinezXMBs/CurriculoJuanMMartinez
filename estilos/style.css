@@ -164,7 +164,7 @@ body {
 }
 
 .articlefolder:hover {
-    animation: subindo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    transform: scale(1.1);
     background-color: #3e8e41;
 }
 
@@ -183,12 +183,6 @@ article li{
     font-family: Verdana;
     text-align: start;
     padding: 2px;
-}
-
-@keyframes subindo {
-  0% {transform: translateY(0);}
-  60% {transform: translateY(-120px);}
-  100% {transform: translateY(-100px);}
 }
 
 .flex-grande {
@@ -403,6 +397,7 @@ a {
     }
 
     .articlefolder:hover {
-        background-color: rgba(141, 75, 0, 0.747);
+        transform: scale(1);
+        background-color: rgba(141, 75, 0, 0.747);;
     }
 }
